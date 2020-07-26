@@ -151,7 +151,7 @@ class Learner(object):
 
 
     def load_confirmed(self, country):
-        df = pd.read_csv('data/time_series_19-covid-Confirmed-country.csv')
+        df = pd.read_csv('data/time_series_19-covid-Confirmed.csv')
         country_df = df[df['Country/Region'] == country]
         return country_df.iloc[0].loc[self.start_date:]
 
